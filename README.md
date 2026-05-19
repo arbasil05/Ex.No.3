@@ -63,11 +63,17 @@ Greenhouse gases function like a thermal blanket around the planet. They allow s
 - Prompt: "In photosynthesis, plants absorb sunlight to produce ____ ."
 - **ChatGPT:**
 
-In photosynthesis, plants absorb sunlight to produce glucose (a simple sugar) and release oxygen as a byproduct. The captured light energy is converted into chemical energy stored in the bonds of glucose molecules; these carbohydrates can be used immediately for cellular respiration or stored as starch for later use. The process depends on pigments (chlorophyll), membrane-based electron transport in the chloroplasts, and enzymatic steps in the Calvin cycle that fix atmospheric CO2 into organic compounds.
+The missing word is:
+
+👉 glucose
+
+Full sentence:
+
+“In photosynthesis, plants absorb sunlight to produce glucose.”
 
  - **Gemini:**
 
-Glucose — plants convert light energy, water, and carbon dioxide into glucose and oxygen. This produced glucose serves as an energy source and building block for growth: it can be metabolized to generate ATP, used to synthesize cellulose for cell walls, or stored as starch. Oxygen is produced when water molecules are split during the light-driven reactions.
+In photosynthesis, plants absorb sunlight to produce glucose (sugar) and oxygen.
 
 ### Conclusion
 Both models produced accurate and useful responses tailored to the prompts and the educational use case. ChatGPT provided more detailed, stepwise explanations and contextual background — useful when learners need deeper understanding or instructors require fuller exposition. Gemini delivered clear, concise summaries that are well suited to quick-study materials or flashcard-style notes. In practice, choose ChatGPT-style replies for depth and worked explanations, and Gemini-style replies for brevity and fast review; both are appropriate for automated educational content depending on the learner's needs.
