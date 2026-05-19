@@ -1,7 +1,7 @@
 # Ex.No.3 - Scenario-Based Report: Diverse Prompting Techniques
 
-### DATE: 30/04/2026
-### REGISTER NUMBER : 212224230189
+### DATE: 19/05/2026
+### REGISTER NUMBER : 212223040002
 ### Aim: To write prompts for four prompt types and evaluate them; simulate answers from two AI styles (GPT-style and Gemini-style).
 
 ### Explanation
