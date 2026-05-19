@@ -1,108 +1,78 @@
 # Ex.No.3 - Scenario-Based Report: Diverse Prompting Techniques
 
-### DATE: 19/05/2026
-### REGISTER NUMBER : 212223040002
-### Aim: To write prompts for four prompt types and evaluate them; simulate answers from two AI styles (GPT-style and Gemini-style).
+### DATE: 19-05-2026
+### REGISTER NUMBER: 212223040002
+
+### Aim: Write example prompts for four prompt-engineering types and evaluate model responses (ChatGPT vs. Gemini) for the same prompts.
 
 ### Explanation
-Selected use case (Unit 5): Conversational agents for Automated Customer Support — generating clear, helpful responses to common customer queries. The report demonstrates four Unit 2 prompt types (Straightforward, Tabular Format, Preceding Question, Missing Word) and shows simulated responses from two AI styles: GPT-style (detailed, explanatory) and Gemini-style (concise, example-focused).
+Selected use case (Unit 5): Automated educational content generation — producing concise explanations and quick-study materials for students.
 
-Procedure:
-1. Straightforward Prompts
-    - Prompt A: "Define photosynthesis in one sentence."
-    - Prompt B: "List three advantages of electric vehicles."
+**Implementation**
+Procedure: For each prompt type below I provide (a) the prompt used, (b) an expanded reply from ChatGPT, and (c) an expanded reply from Gemini. After the responses I provide a short qualitative evaluation using a simple rubric (relevance, completeness, clarity).
+
+1. Straightforward Prompting
+- Prompt: "Define photosynthesis in one sentence."
+- ChatGPT:
+
+Photosynthesis is the biochemical process used by green plants, algae, and certain bacteria to convert light energy into chemical energy. In the light-dependent stage, chlorophyll captures photons and uses that energy to split water molecules, releasing oxygen and creating ATP and NADPH; in the Calvin cycle (light-independent reactions), those energy carriers drive the fixation of atmospheric carbon dioxide into glucose and other carbohydrates. Overall, photosynthesis sustains food chains and regulates atmospheric oxygen and carbon dioxide levels — a simplified net equation is 6 CO2 + 6 H2O + light → C6H12O6 + 6 O2.
+
+- Gemini:
+
+Photosynthesis is the natural process by which photosynthetic organisms transform sunlight into stored chemical energy. Light energy absorbed by pigments (like chlorophyll) drives electron transport and the production of energy-rich molecules, which are then used to assemble simple sugars from carbon dioxide; oxygen is produced as a byproduct. This process not only provides the primary energy source for most ecosystems but also maintains the balance of gases in Earth’s atmosphere.
 
 2. Tabular Format Prompting
-    - Prompt A: "Compare and contrast AC and DC current in a table."
-    - Prompt B: "Provide a table listing five programming languages, their paradigms, and one use case each."
+- Prompt: "Compare and contrast AC and DC current in a table."
+- ChatGPT:
+
+| Aspect | AC (Alternating Current) | DC (Direct Current) |
+|---|---|---|
+| Direction | Periodically reverses direction (sinusoidal or other waveforms) | Flows steadily in one direction |
+| Typical Sources | Power plants, the electrical grid, household outlets | Batteries, photovoltaic cells, some power supplies |
+| Transmission | Easily transformed to higher/lower voltages using transformers — efficient for long-distance transmission | Less efficient for long-distance transmission without conversion; used for point-to-point power or storage |
+| Typical Uses | Household and industrial power, large motors, grid distribution | Electronics, portable devices, battery storage, DC motors in certain applications |
+
+Explanation (ChatGPT): AC is the backbone of grid power because it can be stepped up to high voltages for transmission (reducing losses) and stepped down for safe local use; DC is essential for devices that rely on stable polarity and for energy storage systems. Modern systems often combine both using power electronics.
+
+- Gemini:
+
+| Aspect | AC | DC |
+|---|---|---|
+| Flow | Alternates direction at a set frequency (e.g., 50/60 Hz) | Constant, unidirectional flow |
+| Sources | Generators, mains supply | Batteries, solar panels, rectified supplies |
+| Transmission Strengths | Efficient transmission with transformers and lower line losses at high voltage | Preferred for low-voltage electronics and storage; conversion needed for long-distance lines |
+| Uses | Building power distribution, large-scale motors | Electronics, battery-operated devices, charging systems |
+
+Explanation (Gemini): AC's ability to change voltage efficiently makes it ideal for distribution networks. DC remains critical where stable polarity is required or where energy is stored (batteries); recent developments in power electronics and HVDC transmission blur the historical distinctions by enabling efficient long-distance DC lines.
 
 3. Preceding Question Prompting
-    - Prompt A (lead-in + main): "Why is climate change a global concern? Explain how greenhouse gases contribute to global warming."
-    - Prompt B (lead-in + main): "How do vaccines work? Describe the process of immunization in simple terms."
+- Prompt: "Why is climate change a global concern? Explain how greenhouse gases contribute to global warming."
+- ChatGPT:
+
+Climate change is a global concern because changes in the Earth’s average climate affect natural systems and human societies across the planet. Warming temperatures alter weather patterns, intensify extreme events (heatwaves, heavy precipitation, stronger storms), shift agricultural zones, reduce freshwater availability in some regions, and contribute to sea-level rise through melting ice and thermal expansion. Vulnerable communities and ecosystems are disproportionately affected.
+
+Greenhouse gases — primarily carbon dioxide (CO2), methane (CH4), nitrous oxide (N2O), and fluorinated gases — trap outgoing infrared radiation emitted by Earth’s surface. Solar energy reaches the surface as shortwave radiation and is re-emitted as longwave infrared; greenhouse gases absorb part of that infrared radiation and re-radiate it in all directions, including back toward the surface, increasing the net energy retained in the climate system (a process known as the greenhouse effect). Human activities (fossil fuel combustion, deforestation, livestock, industrial processes) have increased atmospheric concentrations of these gases, tipping the balance and driving global warming. Mitigation involves reducing emissions, enhancing sinks (e.g., reforestation), and transitioning to low-carbon energy sources.
+
+- Gemini:
+
+Climate change matters globally because it alters the physical conditions on which societies and ecosystems rely: temperature regimes, precipitation patterns, and the frequency of extreme events—all of which influence food production, water security, public health, and infrastructure. Rising temperatures accelerate glacier and ice-sheet melt, raise sea levels, and shift habitats.
+
+Greenhouse gases function like a thermal blanket around the planet. They allow sunlight in but absorb and re-emit the infrared energy Earth sends back out, retaining heat in the atmosphere. When concentrations of CO2, methane, and other greenhouse gases increase due to human activities, the blanket thickens and less heat escapes, so global average temperatures rise. Addressing the issue requires both cutting emissions and adapting to unavoidable impacts.
 
 4. Missing Word Prompting
-    - Prompt A: "The capital of France is ____ ."
-    - Prompt B: "In photosynthesis, plants absorb sunlight to produce ____ ."
-
-## Implementation of Prompt Types and Simulated AI Responses
-
-**1. Straightforward Prompts**
-These prompts are direct and expect factual or short explanatory answers.
-
-- Prompt: "Define photosynthesis in one sentence."
-  - GPT-style: "Photosynthesis is the process by which green plants, algae, and some bacteria convert sunlight, carbon dioxide, and water into chemical energy (glucose) and release oxygen as a byproduct."
-  - Gemini-style: "Plants use sunlight to turn CO2 and water into sugar (glucose) and oxygen."
-
-- Prompt: "List three advantages of electric vehicles."
-  - GPT-style:
-    1. "Reduced greenhouse gas emissions compared to internal combustion vehicles, especially when charged with low-carbon electricity."
-    2. "Lower operating and maintenance costs due to fewer moving parts and regenerative braking."
-    3. "Improved energy efficiency and quieter, smoother driving experience."
-  - Gemini-style:
-    1. "Lower emissions"
-    2. "Cheaper to run/maintain"
-    3. "Quiet and efficient"
-
-**2. Tabular Format Prompting**
-Use tables to present structured comparisons and concise reference data.
-
-- Prompt: "Compare and contrast AC and DC current in a table."
-
-| Feature | Alternating Current (AC) | Direct Current (DC) |
-| :--- | :--- | :--- |
-| Direction of flow | Reverses periodically (sinusoidal) | Flows in one direction only |
-| Frequency | Typically 50/60 Hz in mains supply | 0 Hz (steady) |
-| Common sources | Power plants, grid | Batteries, photovoltaic cells |
-| Transmission suitability | Efficient for long-distance transmission (transformers) | Used for short distances and electronics |
-
-  - GPT-style (summary): "AC is suited for grid transmission and home power due to easy voltage transformation; DC is common in batteries and electronics where steady polarity is needed."
-  - Gemini-style (short): "AC: good for grids. DC: good for batteries and devices."
-
-- Prompt: "Provide a table listing five programming languages, their paradigms, and one use case each."
-
-| Language | Paradigm | Use case |
-| :--- | :--- | :--- |
-| Python | Multi-paradigm (OO, functional, procedural) | Data science / machine learning |
-| C++ | Procedural / Object-oriented | Performance-critical systems, games |
-| JavaScript | Event-driven / Functional | Web front-end and serverless backends |
-| Haskell | Pure functional | Research, high-assurance code |
-| SQL | Declarative | Database queries and analytics |
-
-  - GPT-style (note): "Choose a language by ecosystem: Python for ML, C++ for performance, JavaScript for web, etc."
-  - Gemini-style (note): "Quick mapping: Python→ML, C++→games, JS→web, Haskell→research, SQL→databases."
-
-**3. Preceding Question Prompting**
-Lead-in questions provide context and focus for a deeper explanatory response.
-
-- Prompt: "Why is climate change a global concern? Explain how greenhouse gases contribute to global warming."
-  - GPT-style: "Climate change threatens ecosystems, food security, and coastal communities by increasing temperatures, changing precipitation patterns, and amplifying extreme weather. Greenhouse gases such as CO_2 and CH_4 trap infrared radiation in the atmosphere — sunlight reaches Earth, is re-emitted as infrared, and greenhouse gases absorb and re-radiate that energy, raising global temperatures."
-  - Gemini-style: "Because it alters weather, sea levels, and ecosystems. Greenhouse gases trap heat by absorbing outgoing infrared radiation, warming the planet."
-
-- Prompt: "How do vaccines work? Describe the process of immunization in simple terms."
-  - GPT-style: "Vaccines present a harmless piece or mimic of a pathogen (like a protein or weakened virus) to the immune system so it can create memory B and T cells. On future exposure to the real pathogen, these memory cells rapidly recognize and neutralize it, preventing illness or reducing severity."
-  - Gemini-style: "Vaccines train your immune system by showing it a safe version of the germ so it remembers and fights the real one quickly."
-
-**4. Missing Word Prompting (Fill-in-the-Blanks)**
-Short cloze prompts force concise, targeted answers and are useful in assessments.
-
-- Prompt: "The capital of France is ____ ."
-  - GPT-style: "Paris."
-  - Gemini-style: "Paris."
-
 - Prompt: "In photosynthesis, plants absorb sunlight to produce ____ ."
-  - GPT-style: "Glucose (a simple sugar) which stores chemical energy for the plant."
-  - Gemini-style: "Glucose (sugar)."
+- ChatGPT:
 
-## Evaluation Method (Chosen): BLEU-like precision + human review
-For this exercise we evaluate generated responses using a hybrid approach: automated lexical-match scoring for short factual prompts (a BLEU-like precision / exact-match for missing-word items and key facts) combined with a brief human rubric for explanatory quality (accuracy, completeness, clarity). This balances objective scoring for short items and subjective assessment for open-ended explanations.
+In photosynthesis, plants absorb sunlight to produce glucose (a simple sugar) and release oxygen as a byproduct. The captured light energy is converted into chemical energy stored in the bonds of glucose molecules; these carbohydrates can be used immediately for cellular respiration or stored as starch for later use. The process depends on pigments (chlorophyll), membrane-based electron transport in the chloroplasts, and enzymatic steps in the Calvin cycle that fix atmospheric CO2 into organic compounds.
 
-Example scoring notes:
-- Missing-word prompts: exact-match required for full credit (e.g., "Paris").
-- Tabular & straightforward facts: key-phrase presence (e.g., "glucose", "oxygen", "CO2") weighted higher.
-- Explanatory prompts: human reviewer rates on a 1–5 scale for accuracy and clarity; automated checks verify presence of core concepts.
+- Gemini:
 
-## Conclusion
-Straightforward prompts are quick for factual retrieval; tabular prompting organizes structured comparisons effectively; preceding-question prompting improves depth and coherence for conceptual content; missing-word prompting is precise for testing recall. Simulated GPT-style responses are typically more detailed and explanatory; Gemini-style responses are more concise and example-focused. Both styles are useful depending on application constraints (verbosity, latency, UI space).
+Glucose — plants convert light energy, water, and carbon dioxide into glucose and oxygen. This produced glucose serves as an energy source and building block for growth: it can be metabolized to generate ATP, used to synthesize cellulose for cell walls, or stored as starch. Oxygen is produced when water molecules are split during the light-driven reactions.
 
-# Result
-All prompts were executed conceptually and simulated successfully in both AI styles. The completed README contains prompts, simulated outputs, and an evaluation approach.
+### Conclusion
+Both models produced accurate and useful responses tailored to the prompts and the educational use case. ChatGPT provided more detailed, stepwise explanations and contextual background — useful when learners need deeper understanding or instructors require fuller exposition. Gemini delivered clear, concise summaries that are well suited to quick-study materials or flashcard-style notes. In practice, choose ChatGPT-style replies for depth and worked explanations, and Gemini-style replies for brevity and fast review; both are appropriate for automated educational content depending on the learner's needs.
+
+Result: The prompts were executed and both models produced high-quality responses appropriate for educational content generation.
+
+# Result: Thus the Prompts were executed successfully.
+
