@@ -8,7 +8,7 @@
 ### Explanation
 Selected use case (Unit 5): Automated educational content generation — producing concise explanations and quick-study materials for students.
 
-**Implementation**
+### Implementation
 Procedure: For each prompt type below I provide (a) the prompt used, (b) an expanded reply from ChatGPT, and (c) an expanded reply from Gemini. After the responses I provide a short qualitative evaluation using a simple rubric (relevance, completeness, clarity).
 
 **1. Straightforward Prompting**
