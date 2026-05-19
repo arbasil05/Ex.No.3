@@ -11,19 +11,19 @@ Selected use case (Unit 5): Automated educational content generation — produci
 **Implementation**
 Procedure: For each prompt type below I provide (a) the prompt used, (b) an expanded reply from ChatGPT, and (c) an expanded reply from Gemini. After the responses I provide a short qualitative evaluation using a simple rubric (relevance, completeness, clarity).
 
-1. Straightforward Prompting
+**1. Straightforward Prompting**
 - Prompt: "Define photosynthesis in one sentence."
-- ChatGPT:
+- **ChatGPT:**
 
 Photosynthesis is the biochemical process used by green plants, algae, and certain bacteria to convert light energy into chemical energy. In the light-dependent stage, chlorophyll captures photons and uses that energy to split water molecules, releasing oxygen and creating ATP and NADPH; in the Calvin cycle (light-independent reactions), those energy carriers drive the fixation of atmospheric carbon dioxide into glucose and other carbohydrates. Overall, photosynthesis sustains food chains and regulates atmospheric oxygen and carbon dioxide levels — a simplified net equation is 6 CO2 + 6 H2O + light → C6H12O6 + 6 O2.
 
-- Gemini:
+ - **Gemini:**
 
 Photosynthesis is the natural process by which photosynthetic organisms transform sunlight into stored chemical energy. Light energy absorbed by pigments (like chlorophyll) drives electron transport and the production of energy-rich molecules, which are then used to assemble simple sugars from carbon dioxide; oxygen is produced as a byproduct. This process not only provides the primary energy source for most ecosystems but also maintains the balance of gases in Earth’s atmosphere.
 
-2. Tabular Format Prompting
+**2. Tabular Format Prompting**
 - Prompt: "Compare and contrast AC and DC current in a table."
-- ChatGPT:
+- **ChatGPT:**
 
 | Aspect | AC (Alternating Current) | DC (Direct Current) |
 |---|---|---|
@@ -34,7 +34,7 @@ Photosynthesis is the natural process by which photosynthetic organisms transfor
 
 Explanation (ChatGPT): AC is the backbone of grid power because it can be stepped up to high voltages for transmission (reducing losses) and stepped down for safe local use; DC is essential for devices that rely on stable polarity and for energy storage systems. Modern systems often combine both using power electronics.
 
-- Gemini:
+ - **Gemini:**
 
 | Aspect | AC | DC |
 |---|---|---|
@@ -45,27 +45,27 @@ Explanation (ChatGPT): AC is the backbone of grid power because it can be steppe
 
 Explanation (Gemini): AC's ability to change voltage efficiently makes it ideal for distribution networks. DC remains critical where stable polarity is required or where energy is stored (batteries); recent developments in power electronics and HVDC transmission blur the historical distinctions by enabling efficient long-distance DC lines.
 
-3. Preceding Question Prompting
+**3. Preceding Question Prompting**
 - Prompt: "Why is climate change a global concern? Explain how greenhouse gases contribute to global warming."
-- ChatGPT:
+- **ChatGPT:**
 
 Climate change is a global concern because changes in the Earth’s average climate affect natural systems and human societies across the planet. Warming temperatures alter weather patterns, intensify extreme events (heatwaves, heavy precipitation, stronger storms), shift agricultural zones, reduce freshwater availability in some regions, and contribute to sea-level rise through melting ice and thermal expansion. Vulnerable communities and ecosystems are disproportionately affected.
 
 Greenhouse gases — primarily carbon dioxide (CO2), methane (CH4), nitrous oxide (N2O), and fluorinated gases — trap outgoing infrared radiation emitted by Earth’s surface. Solar energy reaches the surface as shortwave radiation and is re-emitted as longwave infrared; greenhouse gases absorb part of that infrared radiation and re-radiate it in all directions, including back toward the surface, increasing the net energy retained in the climate system (a process known as the greenhouse effect). Human activities (fossil fuel combustion, deforestation, livestock, industrial processes) have increased atmospheric concentrations of these gases, tipping the balance and driving global warming. Mitigation involves reducing emissions, enhancing sinks (e.g., reforestation), and transitioning to low-carbon energy sources.
 
-- Gemini:
+ - **Gemini:**
 
 Climate change matters globally because it alters the physical conditions on which societies and ecosystems rely: temperature regimes, precipitation patterns, and the frequency of extreme events—all of which influence food production, water security, public health, and infrastructure. Rising temperatures accelerate glacier and ice-sheet melt, raise sea levels, and shift habitats.
 
 Greenhouse gases function like a thermal blanket around the planet. They allow sunlight in but absorb and re-emit the infrared energy Earth sends back out, retaining heat in the atmosphere. When concentrations of CO2, methane, and other greenhouse gases increase due to human activities, the blanket thickens and less heat escapes, so global average temperatures rise. Addressing the issue requires both cutting emissions and adapting to unavoidable impacts.
 
-4. Missing Word Prompting
+**4. Missing Word Prompting**
 - Prompt: "In photosynthesis, plants absorb sunlight to produce ____ ."
-- ChatGPT:
+- **ChatGPT:**
 
 In photosynthesis, plants absorb sunlight to produce glucose (a simple sugar) and release oxygen as a byproduct. The captured light energy is converted into chemical energy stored in the bonds of glucose molecules; these carbohydrates can be used immediately for cellular respiration or stored as starch for later use. The process depends on pigments (chlorophyll), membrane-based electron transport in the chloroplasts, and enzymatic steps in the Calvin cycle that fix atmospheric CO2 into organic compounds.
 
-- Gemini:
+ - **Gemini:**
 
 Glucose — plants convert light energy, water, and carbon dioxide into glucose and oxygen. This produced glucose serves as an energy source and building block for growth: it can be metabolized to generate ATP, used to synthesize cellulose for cell walls, or stored as starch. Oxygen is produced when water molecules are split during the light-driven reactions.
 
@@ -74,5 +74,6 @@ Both models produced accurate and useful responses tailored to the prompts and t
 
 Result: The prompts were executed and both models produced high-quality responses appropriate for educational content generation.
 
-# Result: Thus the Prompts were executed successfully.
+# Result: 
+Thus the Prompts were executed successfully.
 
